@@ -5,7 +5,7 @@ import os
 from deriv_api import DerivAPI
 from deriv_api import APIError
 
-app_id = your app id here 
+app_id = yourappidhere 
 api_token = 'your token here'
 
 if len(api_token) == 0:

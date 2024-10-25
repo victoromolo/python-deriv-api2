@@ -5,8 +5,8 @@ import os
 from deriv_api import DerivAPI
 from rx import Observable
 
-app_id = 1089
-api_token = os.getenv('DERIV_TOKEN', '')
+app_id = os.getenv('app_id')
+api_token = os.getenv('api_token')
 expected_payout = os.getenv('EXPECTED_PAYOUT', 10)
 
 if len(api_token) == 0:

@@ -1,8 +1,10 @@
 # run it like PYTHONPATH=. python3 examples/simple_bot1.py
 import asyncio
+import os
 from deriv_api import DerivAPI
 from rx import Observable
-app_id = 1089
+app_id = os.getenv('app_id')
+api_token = os.getenv('api_token')
 
 
 async def sample_calls():

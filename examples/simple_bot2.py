@@ -6,8 +6,8 @@ from deriv_api import DerivAPI
 import websockets
 
 
-app_id = 1089
-api_token = os.getenv('DERIV_TOKEN', '')
+app_id = os.getenv('app_id')
+api_token = os.getenv('api_token')
 
 if len(api_token) == 0:
     sys.exit("DERIV_TOKEN environment variable is not set")

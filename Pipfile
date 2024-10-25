@@ -1,12 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
 [packages]
-websockets = "==10.3"
-reactivex = "==4.0.*"
-deriv-api = {editable = true, path = "."}
+websockets = "*"
+aiohttp = "*"
+python-dateutil = "*"
+reactivex = ">=4.0.4"
 
 [dev-packages]
 pytest = "*"
-pytest-runner = "*"
-pytest-mock = "*"
 pytest-asyncio = "*"
-pdoc3 = "*"
-coverage = "===4.5.4"
+pytest-timeout = "*"
+black = "*"
+flake8 = "*"
+
+[requires]
+python_version = "3.11"

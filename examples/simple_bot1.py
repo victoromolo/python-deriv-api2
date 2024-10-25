@@ -5,8 +5,8 @@ import os
 from deriv_api import DerivAPI
 from deriv_api import APIError
 
-app_id = 1089
-api_token = os.getenv('DERIV_TOKEN', '')
+app_id = 65003
+api_token = 'TRwZZR5BNncRLIN'
 
 if len(api_token) == 0:
     sys.exit("DERIV_TOKEN environment variable is not set")
